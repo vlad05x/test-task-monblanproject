@@ -1,0 +1,56 @@
+export default function BackgroundWaves() {
+  return (
+    <div className="bg-waves-container">
+      <svg
+        className="wave-top-left"
+        viewBox="0 0 630 398"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMaxYMin meet"
+      >
+        <path
+          d="M143 351C85.8 414.2 23.8333 399.667 0 384.5L-59 308L-54 1.5L287.5 -84.5L630 -3.5C582.4 11.7 571 23 564.5 52C553.49 101.12 525.333 156 511.5 169.5C457.5 243 363.5 215.5 307 214.5C250.5 213.5 212.5 229.5 191.5 271C175.499 302.622 154 338.167 143 351Z"
+          fill="url(#wave_gradient)"
+        />
+        <defs>
+          <linearGradient
+            id="wave_gradient"
+            x1="536.5"
+            y1="-84"
+            x2="54.5"
+            y2="398"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#40AF79" />
+            <stop offset="1" stopColor="#124757" />
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <svg
+        className="wave-bottom-right"
+        viewBox="0 0 190 350"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M190 89C164 110 137 115 127 88C114 53 112 6 79 1C45 -4 8 38 1 83C-6 131 30 150 51 176C75 205 67 244 101 278C127 304 159 325 190 341V89Z"
+          fill="url(#wave_gradient_br)"
+        />
+        <defs>
+          <linearGradient
+            id="wave_gradient_br"
+            x1="0"
+            y1="89"
+            x2="190"
+            y2="341"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#40AF79" />
+            <stop offset="1" stopColor="#124757" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  );
+}
