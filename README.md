@@ -1,16 +1,38 @@
-# React + Vite
+# Тестове завдання: Monblanproject
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Цей проєкт є реалізацією тестового завдання. Застосунок розроблено з використанням сучасного стеку на базі React та Vite.
 
-Currently, two official plugins are available:
+## 📌 Особливості реалізації
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> [!NOTE]  
+> **Підхід до верстки (Desktop First)**
+> Оскільки вихідний макет дизайну було надано починаючи з ширини **1440px**, процес верстки було побудовано починаючи з цієї роздільної здатності (десктопної версії) і далі адаптовано по спадаючій аж до мобільної версії. Це дозволило максимально точно та ефективно перенести візуальні рішення з макету в код. Для забезпечення максимальної точності відтворення макета та коректної роботи на різних роздільних здатностях під час розробки активно використовувалися інструменти браузера (DevTools) для перевірки адаптивності, аналізу поведінки елементів та тестування інтерфейсу на різних розмірах екранів. З огляду на це, рекомендовано розпочинати проєктування та підготовку дизайн-макетів із ширини 1440px, що дозволяє ефективно масштабувати інтерфейс для всіх цільових пристроїв і забезпечує високу якість адаптивної верстки.
 
-## React Compiler
+## 🚀 Запуск проєкту локально
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Для запуску проєкту на вашому комп'ютері виконайте наступні кроки:
 
-## Expanding the ESLint configuration
+1. **Склонуйте репозиторій та перейдіть у папку проєкту:**
+   ```bash
+   git clone https://github.com/vlad05x/test-task-monblanproject.git
+   cd test-task-monblanproject
+   ```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Встановіть залежності:**
+   ```bash
+   npm install
+   ```
+
+3. **Запустіть сервер для розробки:**
+   ```bash
+   npm run dev
+   ```
+
+Після цього застосунок буде доступний у браузері (зазвичай за адресою `http://localhost:5173/`).
+
+## 🛠 Використаний стек та версії пакетів
+
+- **React (`^19.2.6`)** — бібліотека для створення користувацьких інтерфейсів.
+- **Vite (`^8.0.12`)** — швидкий інструмент збірки та сервер для розробки.
+- **SCSS / Sass (`^1.101.0`)** — препроцесор для зручної та модульної стилізації компонентів.
+- **Flatpickr (`^4.6.13`)** — легка бібліотека для створення календаря та вибору дат.
